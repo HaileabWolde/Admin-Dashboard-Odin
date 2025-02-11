@@ -6,6 +6,10 @@ html, body{
   *{
       box-sizing: border-box;
   }
+  h1{
+    font-family: "Roboto", serif;
+    font-weight: 800;
+  }
   .container{
     display: grid;
     background-color: lightblue;
@@ -59,37 +63,79 @@ html, body{
     grid-row-end: 13;
     padding: 30px;
     gap: 20px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: 70% 30%;
   }
-
-  
   .projects{
+    height: 100%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     grid-row-start: 1;
-    grid-row-end: 9;
+    grid-row-end: 11;
   }
-  .announcments{
+  .projectOne{
     grid-row-start: 1;
-    grid-row-end: 9;
+    grid-row-end: 6; 
+  }
+  .icons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .projects>div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.github{
+  height: 10%;
+  width: 10%;
+  align-self: end;
+
+}
+  .Main{
+    height: 70%;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
+    0 2px 5px rgba(0, 0, 0, 0.06); 
+  }
+  .projectTwo{
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+ .projectThree{
+  grid-row-start: 6;
+    grid-row-end: 11;
+ }
+ .projectFour{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+    grid-row-end: 11;
+ }
+  .announcments{
+    grid-row-start: 1;
+    grid-row-end: 11;
+    display: grid;
+    gap: 15px;
   }
   .announcments>div{
     border-radius: 15px; 
     background-color: #fffeff;
-    border-left-color: #eeb241;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
               0 2px 5px rgba(0, 0, 0, 0.06); 
   }
   .javascript{
-    height: 60%;
+    grid-row-start: 1;
+    grid-row-end: 8;
   }
   .cssExercise{
-    height: 40%;
+    grid-row-start: 8;
+    grid-row-end: 12;
   }
   .projects>div{
     background-color: #fffeff;
@@ -99,6 +145,7 @@ html, body{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
               0 2px 5px rgba(0, 0, 0, 0.06);
   }
+  
   .sidebarContent{
     display: flex;
     justify-content: space-around;
