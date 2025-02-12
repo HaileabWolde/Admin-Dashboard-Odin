@@ -14,7 +14,6 @@ html, body{
     display: grid;
     background-color: lightblue;
     resize: both;
-    overflow: auto;
     height: 50rem;
    grid-template-rows: repeat(12, 1fr);
    grid-template-columns: 20% 80%;
@@ -25,7 +24,9 @@ html, body{
     grid-row-end: 13;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.8); /* Right-side shadow */
   }
-  .sidebar{
+  .sidebar{ 
+    position: sticky;
+    top: 0px;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: repeat(3, 1fr);
