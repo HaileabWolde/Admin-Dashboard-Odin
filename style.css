@@ -90,11 +90,27 @@ html, body{
     justify-content: center;
     align-items: center;
   }
-.github{
+.icons{
+  cursor: pointer;
+  display: flex;
+  width: 100%;
   height: 10%;
-  width: 10%;
-  align-self: end;
-
+  justify-content: end;
+  gap: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.icons a {
+  display: flex; /* Allows <a> to behave like a block while keeping content size */
+  align-items: center; /* Centers the icons properly */
+  justify-content: end;
+  height: 100%;
+}
+.github{
+  height: 100%;
+}
+.eye{
+  height: 100%;
 }
   .Main{
     height: 70%;
